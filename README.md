@@ -287,7 +287,7 @@ for q in `seq 1 22`;do DSS_QUERY=/opt/db/tpch-tool/tpch_number_version/dbgen/que
 
 ## References
 
-* Prior art research links (during project development): https://docs.google.com/document/d/1gyzBhjRXzO7Eb3Ok6PXf8C8-X-MZYstEl8SJE1LEo38/edit#
+* Prior art research links (useful during project development): https://docs.google.com/document/d/1gyzBhjRXzO7Eb3Ok6PXf8C8-X-MZYstEl8SJE1LEo38/edit#
 
 * Apache Arrow introduction: https://arrow.apache.org/overview/#
 
