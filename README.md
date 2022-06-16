@@ -32,7 +32,7 @@ Finished components (with installation instructions below) include:
 * Linking the turboODBC with PostgreSQL and returning the data in arrow format (*pyarrow1.py*)
 * Base for a FlightClient in Python (*FlightClient.py*)
 * Base for a FlightServer in Python (*FlightServer.py*)
-* Full protobuf definitions
+* Full protobuf definitions (*Flight.proto*)
 
 TODO:
 * Inject the TPC-DS or other benchmark dataset into PostgreSQL database
@@ -47,6 +47,15 @@ TODO:
 Arrow Flight developed by Apache is a client-server RPC framework which simplifies high-performance transfer of large datasets through network interfaces.
 It uses the Apache Arrow format to store and process data in memory using a columnar oriented format. This increases the speed of data analysis and processing. The transfer in columnar format is optimized with the usage of RPC methods and the IPC format.
 
+Arrow Flight developed by Apache is a client-server RPC framework which sim- plifies high-performance transfer of large datasets
+through network interfaces. It uses the Apache Arrow format to store and process data in memory using a columnar oriented format. 
+This increases the speed of data analysis and pro- cessing. The transfer in columnar format is optimized with the usage of RPC 
+methods and the IPC format.
+
+Arrow Flight uses gRPC for retrieving data, metadata and implementing new methods required by the project. The methods and wire formats are defined with the protobuf
+language. Apache offers a complete full Flight.proto file containg all newest definitions for all methods used by Arrow Flight.
+
+More information and specifications can be found here: https://arrow.apache.org/docs/format/Flight.html
 
 
 ### 2. ODBC
@@ -84,10 +93,9 @@ handle, as well as the operating system and DBMS used.
 ### 3. TurbODBC
 
 Turbodbc is a Python module that allows you to access relational databases 
-via  the Open Database Connectivity (ODBC) interface. Turbodbc offers built-in 
-support for NumPy and Apache Arrow. The turbodbc module is faster compared to 
-pyodbc is faster. Turbodbc allows you to massively download result sets and 
-upload query parameters.
+via the Open Database Connectivity (ODBC) interface just like pyodbc. 
+Turbodbc offers built-in support for NumPy and Apache Arrow and therefore is faster compared to 
+pyodbc. TurbODBC returns results already in the Arrow format, so creating any custom scripts for a row-to-column transform are not necessary. The arrow format and there fore turbODBC allows you to massively download result sets and upload query parameters.
 
 ### 4. TPC-DS
 
@@ -279,7 +287,7 @@ for q in `seq 1 22`;do DSS_QUERY=/opt/db/tpch-tool/tpch_number_version/dbgen/que
 
 ## References
 
-* Shared workspace document for project: https://docs.google.com/document/d/1gyzBhjRXzO7Eb3Ok6PXf8C8-X-MZYstEl8SJE1LEo38/edit#
+* Prior art research links (during project development): https://docs.google.com/document/d/1gyzBhjRXzO7Eb3Ok6PXf8C8-X-MZYstEl8SJE1LEo38/edit#
 
 * Apache Arrow introduction: https://arrow.apache.org/overview/#
 
@@ -298,6 +306,8 @@ for q in `seq 1 22`;do DSS_QUERY=/opt/db/tpch-tool/tpch_number_version/dbgen/que
 * TPC-DS: https://www.tpc.org/tpcds/
 
 * pyODBC: https://github.com/mkleehammer/pyodbc/wiki 
+
+* gRPC: https://grpc.io/
 
 * turboODBC: https://turbodbc.readthedocs.io/en/latest/pages/introduction.html
 
