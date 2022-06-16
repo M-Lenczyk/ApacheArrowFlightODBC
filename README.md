@@ -18,8 +18,7 @@ Finished components include:
 * A configured PostgreSQL DBMS
 * Linking the ODBC driver with PostgreSQL
 * Linking the turboODBC with PostgreSQL
-
-Core components of a FlightClient
+* Core components of a FlightClient
 * Core components of a FlightServer
 
 TODO:
