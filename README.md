@@ -279,6 +279,8 @@ for q in `seq 1 22`;do DSS_QUERY=/opt/db/tpch-tool/tpch_number_version/dbgen/que
 
 * Apache Arrow introduction: https://arrow.apache.org/overview/#
 
+* ArrowFlight: Server, Client module implemantation: https://mirai-solutions.ch/news/2020/06/11/apache-arrow-flight-tutorial/
+
 * Apache Arrow Flight:
   * Introduction https://arrow.apache.org/blog/2019/10/13/introducing-arrow-flight/
   * Specification: https://arrow.apache.org/docs/format/Flight.html 
@@ -292,6 +294,8 @@ for q in `seq 1 22`;do DSS_QUERY=/opt/db/tpch-tool/tpch_number_version/dbgen/que
 * turboODBC: https://turbodbc.readthedocs.io/en/latest/pages/introduction.html
 
 * Article assesing performance for a similiar project scenario: [LINK](https://www.researchgate.net/publication/359814346_Benchmarking_Apache_Arrow_Flight_--_A_wire-speed_protocol_for_data_transfer_querying_and_microservices/fulltext/624fba624f88c3119ce87023/Benchmarking-Apache-Arrow-Flight--A-wire-speed-protocol-for-data-transfer-querying-and-microservices.pdf?origin=publication_detail)
+
+
 
 
 
