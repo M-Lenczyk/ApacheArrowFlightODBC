@@ -92,7 +92,7 @@ handle, as well as the operating system and DBMS used.
 
 ### 3. TurbODBC
 
-Turbodbc is a Python module that allows you to access relational databases 
+TurbODBC is a Python module that allows you to access relational databases 
 via the Open Database Connectivity (ODBC) interface just like pyodbc. 
 Turbodbc offers built-in support for NumPy and Apache Arrow and therefore is faster compared to 
 pyodbc. TurbODBC returns results already in the Arrow format, so creating any custom scripts for a row-to-column transform are not necessary. The arrow format and there fore turbODBC allows you to massively download result sets and upload query parameters.
