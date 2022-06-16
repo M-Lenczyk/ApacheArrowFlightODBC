@@ -16,7 +16,7 @@ Proposed solution architecture:
 This document provides means for installation and configuration of the test environment and a short introduction to used technologies, modules and how they work.
 
 DISCLAIMER: 
-This project is not yet finished and some key components are still work in progress.
+This project is not yet finished and some key components are still work in progress. The first project iteration was done with MySQL Server 2019 on Windows 10. We have decided later to switch to open-sourced solutions. Therefore, we chose PostgreSQL and Debian.
 
 It is highly recommended to get familiar with the references listed at end of this document.
 
