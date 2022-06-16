@@ -275,6 +275,8 @@ for q in `seq 1 22`;do DSS_QUERY=/opt/db/tpch-tool/tpch_number_version/dbgen/que
 
 ## References
 
+* Shared workspace document for project: https://docs.google.com/document/d/1gyzBhjRXzO7Eb3Ok6PXf8C8-X-MZYstEl8SJE1LEo38/edit#
+
 * Apache Arrow introduction: https://arrow.apache.org/overview/#
 
 * Apache Arrow Flight:
@@ -286,8 +288,12 @@ for q in `seq 1 22`;do DSS_QUERY=/opt/db/tpch-tool/tpch_number_version/dbgen/que
 * TPC-H queries tutorial: http://myfpgablog.blogspot.com/2016/08/tpc-h-queries-on-postgresql.html
 
 * TPC-DS: https://www.tpc.org/tpcds/
+
 * turboODBC: https://turbodbc.readthedocs.io/en/latest/pages/introduction.html
-* 
+
+* Article assesing performance for a similiar project scenario: [LINK](https://www.researchgate.net/publication/359814346_Benchmarking_Apache_Arrow_Flight_--_A_wire-speed_protocol_for_data_transfer_querying_and_microservices/fulltext/624fba624f88c3119ce87023/Benchmarking-Apache-Arrow-Flight--A-wire-speed-protocol-for-data-transfer-querying-and-microservices.pdf?origin=publication_detail)
+
+
 
 
 
