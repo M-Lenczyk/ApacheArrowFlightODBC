@@ -56,8 +56,7 @@ methods and the IPC format.
 ### 2. ODBC
 
 ODBC (Open Data Base Connectivity) - API specification that allows the application to access multiple
-Database Management Systems (DBMS) with the same source code. The appli-
-cation calls functions in the ODBC interface that are implemented in modules
+Database Management Systems (DBMS) with the same source code. The application calls functions in the ODBC interface that are implemented in modules
 called drivers, that support a specific database. Driver Manager handles the
 communication between the application and individual drivers. 
 
