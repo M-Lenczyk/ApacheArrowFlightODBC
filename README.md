@@ -16,7 +16,7 @@ Proposed solution architecture:
 This document provides means for installation and configuration of the test environment and a short introduction to used technologies, modules and how they work.
 
 DISCLAIMER: 
-This project is not yet finished and some key components are still WIP.
+This project is not yet finished and some key components are still work in progress.
 
 It is highly recommended to get familiar with the references listed at end of this document.
 
@@ -44,12 +44,8 @@ TODO:
 
 ### 1. Apache Arrow Flight
 
-Arrow Flight developed by Apache is a client-server RPC framework which sim-
-plifies high-performance transfer of large datasets through network interfaces.
-It uses the Apache Arrow format to store and process data in memory using a
-columnar oriented format. This increases the speed of data analysis and pro-
-cessing. The transfer in columnar format is optimized with the usage of RPC
-methods and the IPC format.
+Arrow Flight developed by Apache is a client-server RPC framework which simplifies high-performance transfer of large datasets through network interfaces.
+It uses the Apache Arrow format to store and process data in memory using a columnar oriented format. This increases the speed of data analysis and processing. The transfer in columnar format is optimized with the usage of RPC methods and the IPC format.
 
 
 
