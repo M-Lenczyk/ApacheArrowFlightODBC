@@ -185,9 +185,9 @@ Next step is loading data to database. A sample code *pyarrow1.py* to achieve th
 
 ### 6. Datasets
 
-#### TPC-H
+#### TPC-DS
 
-Download the source code for TPC-H tool from https://www.tpc.org/tpc_documents_current_versions/current_specifications5.asp
+Download the source code for TPC-DS tool from https://www.tpc.org/tpc_documents_current_versions/current_specifications5.asp
 
 Copy *Makefile.suite* to Makefile.
 
