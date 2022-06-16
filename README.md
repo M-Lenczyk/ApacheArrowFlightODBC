@@ -279,6 +279,8 @@ for q in `seq 1 22`;do DSS_QUERY=/opt/db/tpch-tool/tpch_number_version/dbgen/que
 
 * Apache Arrow introduction: https://arrow.apache.org/overview/#
 
+* ODBC introduction: https://docs.microsoft.com/en-us/sql/odbc/reference/odbc-overview?view=sql-server-ver15
+
 * ArrowFlight: Server, Client module implemantation: https://mirai-solutions.ch/news/2020/06/11/apache-arrow-flight-tutorial/
 
 * Apache Arrow Flight:
@@ -290,6 +292,8 @@ for q in `seq 1 22`;do DSS_QUERY=/opt/db/tpch-tool/tpch_number_version/dbgen/que
 * TPC-H queries tutorial: http://myfpgablog.blogspot.com/2016/08/tpc-h-queries-on-postgresql.html
 
 * TPC-DS: https://www.tpc.org/tpcds/
+
+* pyODBC: https://github.com/mkleehammer/pyodbc/wiki 
 
 * turboODBC: https://turbodbc.readthedocs.io/en/latest/pages/introduction.html
 
