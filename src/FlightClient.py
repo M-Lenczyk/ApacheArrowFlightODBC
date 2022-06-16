@@ -1,4 +1,5 @@
 #Kod źródłowy modułu klienta.
+
 print("ApacheArrow Flight Client started!")
 
 import argparse
