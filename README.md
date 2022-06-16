@@ -28,7 +28,7 @@ Especially:
 
 Finished components (with installation instructions below) include:
 * A configured PostgreSQL DBMS
-* Linking the ODBC driver with PostgreSQL
+* Linking the ODBC driver with PostgreSQL (*pyodbc1.py*)
 * Linking the turboODBC with PostgreSQL and returning the data in arrow format (*pyarrow1.py*)
 * Base for a FlightClient in Python (*FlightClient.py*)
 * Base for a FlightServer in Python (*FlightServer.py*)
