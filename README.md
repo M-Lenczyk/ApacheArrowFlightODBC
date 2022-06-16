@@ -5,7 +5,7 @@
 The goal of this project is to create an Apache Arrow Flight service in combination with an ODBC data source. 
 The project also aims to assess the performance diffrence between using a pure ODBC connection and an ODBC connection with Apache Arrow Flight augumentation. 
 
-We will be using PostgreSQL DBMS with a dedicated ODBC driver, enriched by the turbODBC library to get our results in the Arrow Format. The datasets on which we will perform our queries should be provided by a dedicated benchmark, for example: TPC-DS.
+We will be using PostgreSQL DBMS with a dedicated ODBC driver, enriched by the turbODBC module to get our results in the Arrow Format. The datasets on which we will perform our queries and assess performance should be provided by a dedicated benchmark, for example: TPC-DS.
 
 
 
@@ -50,6 +50,8 @@ It uses the Apache Arrow format to store and process data in memory using a
 columnar oriented format. This increases the speed of data analysis and pro-
 cessing. The transfer in columnar format is optimized with the usage of RPC
 methods and the IPC format.
+
+
 
 ### 2. ODBC
 
@@ -247,31 +249,46 @@ DATABASE=ORACLE
 MACHINE=LINUX
 WORKLOAD=TPCH
 `
+
 Run Makefile:
 
 `make`
 
 To generate queries and see sizes queries run the following commands:
 
-`./dbgen -s 1`
+```bash
 
-`ls -l *.tbl`
+./dbgen -s 1
 
-```for i in `ls *.tbl`; do sed 's/|$//' $i > ${i/tbl/csv};```
+ls -l *.tbl
 
-`echo $i; done;`
+for i in `ls *.tbl`; do sed 's/|$//' $i > ${i/tbl/csv};
 
-```cd /opt/db/ws/tpch/sql```
+echo $i; done;
 
-```cp /opt/db/tpch-tool/tpch_number_version/dbgen/dists.dss```
+cd /opt/db/ws/tpch/sql
 
-```for q in `seq 1 22`;do DSS_QUERY=/opt/db/tpch-tool/tpch_number_version/dbgen/queries qgen $q > $q.sql;```
+cp /opt/db/tpch-tool/tpch_number_version/dbgen/dists.dss
+
+for q in `seq 1 22`;do DSS_QUERY=/opt/db/tpch-tool/tpch_number_version/dbgen/queries qgen $q > $q.sql;
+
+```
 
 ## References
 
-https://arrow.apache.org/overview/#
+* Apache Arrow introduction: https://arrow.apache.org/overview/#
 
-https://arrow.apache.org/blog/2019/10/13/introducing-arrow-flight/
+* Apache Arrow Flight:
+  * Introduction https://arrow.apache.org/blog/2019/10/13/introducing-arrow-flight/
+  * Specification: https://arrow.apache.org/docs/format/Flight.html 
+
+* Similiar solution/project: https://github.com/timvw/arrow-flightsql-odbc
+
+* TPC-H queries tutorial: http://myfpgablog.blogspot.com/2016/08/tpc-h-queries-on-postgresql.html
+
+* TPC-DS: https://www.tpc.org/tpcds/
+* turboODBC: https://turbodbc.readthedocs.io/en/latest/pages/introduction.html
+* 
 
 
 
