@@ -47,10 +47,6 @@ TODO:
 Arrow Flight developed by Apache is a client-server RPC framework which simplifies high-performance transfer of large datasets through network interfaces.
 It uses the Apache Arrow format to store and process data in memory using a columnar oriented format. This increases the speed of data analysis and processing. The transfer in columnar format is optimized with the usage of RPC methods and the IPC format.
 
-Arrow Flight developed by Apache is a client-server RPC framework which sim- plifies high-performance transfer of large datasets
-through network interfaces. It uses the Apache Arrow format to store and process data in memory using a columnar oriented format. 
-This increases the speed of data analysis and pro- cessing. The transfer in columnar format is optimized with the usage of RPC 
-methods and the IPC format.
 
 Arrow Flight uses gRPC for retrieving data, metadata and implementing new methods required by the project. The methods and wire formats are defined with the protobuf
 language. Apache offers a complete full Flight.proto file containg all newest definitions for all methods used by Arrow Flight.
